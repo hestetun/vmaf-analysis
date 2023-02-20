@@ -44,3 +44,4 @@ echo "" >> $LOGF
 echo "Analysis is done" >> $LOGF
 cat $LOGF
 
+exit
