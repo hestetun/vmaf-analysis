@@ -44,14 +44,3 @@ echo "" >> $LOGF
 echo "Analysis is done" >> $LOGF
 cat $LOGF
 
-return
-
-# List of files to analyze
-# read -p "drag n drop your files to analyze " compressed
-# echo "this file is compressed and will be analyzed $compressed" >> $LOGF
-
-
-#for files in $compressed; do
-#    echo "$files" >> $LOGF
-#    ffmpeg -i $files -i $reference -lavfi "[0][1]libvmaf=log_path=$LOGF:log_fmt=xml:n_threads=$userthread" -f null - && grep Parsed_ >> $LOGF
-#done
